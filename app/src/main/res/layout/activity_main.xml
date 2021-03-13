@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="60dp">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="Information"
+        android:textColor="#173B64"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/bouttionAdd"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/group_765"
+        android:onClick="AddToFeed">
+    </ImageButton>
+
+ </RelativeLayout>
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:auto_cycle="true"
+        app:corner_radius="5"
+        app:delay="0"
+        app:error_image="@drawable/auli"
+        app:period="1000"
+        app:placeholder="@drawable/auli"
+
+       ></com.denzcoskun.imageslider.ImageSlider>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="340,22 liked this place"
+        android:textColor="#3D699B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="37dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"></TextView>
+
+    <ListView
+        android:id="@+id/LView_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0.5dp"
+        tools:layout_height="200dip"
+        android:layout_margin="16dp"
+        android:divider="#fff"
+        android:paddingLeft="4dp">  </ListView>
+
+
+    <ListView
+        android:id="@+id/LVcomint"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:layout_height="350dip"
+        android:divider="#fff"
+        android:layout_margin="6pt"
+       ></ListView>
+
+
+</LinearLayout>
